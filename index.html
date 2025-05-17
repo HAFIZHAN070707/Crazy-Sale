@@ -27,7 +27,6 @@
       flex-wrap: nowrap; /* Jangan membungkus, tetap 1 baris */
       justify-content: space-between; /* Jarak rata antar produk */
       gap: 10px;
-      padding: 10px;
     }
 
     .product {
@@ -62,10 +61,11 @@
     }
 
     .product-price {
-      font-size: 12px; /* Ukuran font harga lebih kecil */
+      font-size: 14px; /* Ukuran font harga lebih kecil */
+      text-align: center;
+      width: 100%;
       margin-top: 3px;
       margin-bottom: 10px;
-      font-weight: bold;
       color: #d0eaff; /* Warna harga lebih terang dan lembut */
     }
 
@@ -86,6 +86,8 @@
     .error {
       color: rgb(255, 255, 255);
       font-size: 0.9em;
+      width: 100%;
+      text-align: center;
       margin-top: 5px;
       margin-bottom: 5px;
     }
@@ -174,8 +176,6 @@
       <div class="product-name">256GB</div>
       <div class="product-price">Rp.3.200.000</div>
       <button class="btn-pilih" onclick="pilihProduk('iPhone 14 Pro Max - Rp.3.200.000', this)">Pilih</button>
-
-
     </div>
 
     <!-- Produk 2 -->
@@ -185,10 +185,7 @@
       <div class="product-name">256GB</div>
       <div class="product-price">Rp.2.100.000</div>
       <button class="btn-pilih" onclick="pilihProduk('iPhone 13 - Rp.2.100.000', this)">Pilih</button>
-
-
     </div>
-
     <!-- Produk 3 -->
     <div class="product">
       <img src="https://buy.gazelle.com/cdn/shop/files/iPhone_11_Pro_Max_-_Black_-_Overlap_Trans-cropped_551b0f50-18cc-402d-8882-368a542b3e99.jpg?v=1746740666" alt="iPhone 11">
@@ -196,14 +193,11 @@
       <div class="product-name">256GB</div>
       <div class="product-price">Rp.1.000.000</div>
       <button class="btn-pilih" onclick="pilihProduk('iPhone 11 - Rp.1.000.000', this)">Pilih</button>
-
-
     </div>
   </div>
 
   <!-- Judul Formulir -->
   <h2>Masukkan Data Penerima</h2>
-
   <!-- Formulir -->
   <form action="checkout.html" method="get" onsubmit="return validasiForm()">
     <!-- Input tersembunyi untuk produk terpilih -->
